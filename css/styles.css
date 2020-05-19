@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	transition: all .2s ease-in;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #3b3f45;
+	font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+	min-height: 100%;
+	outline: 20px solid #fff;
+	color: #fff;
+}
+
+.header {
+	width: 100vw;
+	height: 7.3125rem;
+	background-color: #4a4f56;
+	text-align-last: center;
+	margin-bottom: 2.5rem;
+}
+
+.header h1 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	padding-top: 1.5625rem;
+	color: #eb7e7f;
+}
+
+.header p {
+	margin: 0;
+	color: #eb7e7f;
+}
+
+main {
+	width: 100vw;
+	margin-bottom: 40px;
+}
+
+.shopping-list {
+	width: inherit;
+	list-style: none;
+	font-size: 20px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.shopping-list li {
+	width: 800px/* 50rem */;
+	height: 63px/* 3.9375rem */;
+	/* line-height: 40px; */
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+li:nth-child(2n) {
+	background-color: #7a7593;
+}
+
+.shopping-list label:nth-last-child(2n) {
+	background-color: #88839e;
+}
+
+li:nth-last-child(2n) {
+	background-color: #88839e;
+}
+
+li:hover {
+	background-color: #625e77;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	font-weight: bold;
+}
+
+li:active {
+	background-color: #eb7e7f;
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	width: inherit;
+	height: inherit;
+}
+
+input {
+	width: 25px/* 1.5625rem */;
+	height: 25px/* 1.5625rem */;
+	margin: 18px 17px 0 15px;
+}
+
+input:checked ~ span{
+	text-decoration: line-through;
+	color: #a3a0b5;
+}
+
+span {
+	/* font-size: 20px; */
+	vertical-align: super;
+}
+
+.note {
+	font-size: 14px;
+}
+
+ul, footer {
+	float: center;
+}
+
+footer {
+	width: 50%;
+	align-items: center;
+	line-height: 40px;
+	margin-left: 160px;
+}
+
+.footer {
+	width: 100vw;
+	margin: 0;
+	margin-bottom: 102px;
+}
+
+button,
+button:active,
+button:focus,
+input {
+outline: none !important;
+}
+
+button {
+	display: block;
+	width: 800px;
+	height: 73px;
+	margin: 0 auto;
+	background-color: #4a4f56;
+	border: 0;
+	color: #eb7e7f;
+	font-size: 20px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+button:hover {
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
+button:active {
+	background-color: #eb7e7f;
+	color: #4a4f56;
+}

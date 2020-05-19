@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<img src="http://flukeout.github.io/favicon.png">
+	</title>
+	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<header class="header">
+		<h1>CSS Diner Sopping List</h1>
+		<p>Let's go to the mall!</p>
+	</header>
+	
+	<main>
+		<ul class="shopping-list" id="formId">
+			<li>
+				<label for="checkbox-1">
+					<input id="checkbox-1" type="checkbox">
+					<span class="item">A lot of pickles</span>
+					<span class="note">(for the next lessons about CSS)</span>
+				</label>
+			</li>
+			<li>
+				<label for="checkbox-2">
+					<input id="checkbox-2" type="checkbox">
+					<span class="item">10 apples</span>
+					<span class="note">(for more CSS manipulations)</span>
+				</label>
+			</li>
+			<li>
+				<label for="checkbox-3">
+					<input id="checkbox-3" type="checkbox">
+					<span class="item">20 oranges</span>
+					<span class="note">(because they are awsome)</span>
+				</label>
+			</li>
+			<li>
+				<label for="checkbox-4">
+					<input id="checkbox-4" type="checkbox">
+					<span class="item">13 plates</span>
+					<span class="note">(hm... they always disappear)</span>
+				</label>
+			</li>
+			<li>
+				<label for="checkbox-5">
+					<input id="checkbox-5" type="checkbox">
+					<span class="item">15 bentos</span>
+				</label>
+			</li>
+			<li>
+				<label for="checkbox-6">
+					<input id="checkbox-6" type="checkbox">
+					<span class="item">1 bottle of Sake ^_^</span>
+					<span class="note">(for my friends)</span>
+				</label>
+			</li>
+		</ul>
+	</main>
+
+	<footer class="footer">
+		<button class="btn from-right" id="clear">Bon appetit! :)</button>
+	</footer>
+
+
+	<script>
+		document.getElementById("clear").addEventListener("click", function(e) {
+  			var formBlock = document.getElementById("formId");
+  			var inputArr = formBlock.querySelectorAll("input[type=checkbox]");
+  			inputArr.forEach(function(el) {
+    			el.checked = false;
+  			});
+		});
+
+	</script>
+</body>
+</html>
